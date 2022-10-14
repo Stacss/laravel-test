@@ -11,14 +11,13 @@
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
         <h1 class="display-4 fw-normal">Редактирование товара {{$data->name}}</h1>
     </div>
+
     @include('message')
-
-
-
 
     <div class="row">
         <div class="col-lg-6 col-xs-12">
             <form action="{{route('update_goods', $data->id)}}" method="post">
+
                 @csrf
 
                 <label for="brand_id">Бренд товара (обязательно для заполнения)</label>
@@ -49,24 +48,17 @@
             <th scope="col">ID</th>
             <th scope="col">Бренд</th>
             <th scope="col">Наименование</th>
-
         </tr>
         </thead>
         <tbody>
-
             <tr>
                 <th scope="row">1</th>
                 <td>{{$data->id}}</td>
                 <td>{{$brand_name}}</td>
                 <td>{{$data->name}}</td>
-
             </tr>
-
         </tbody>
     </table>
-
-
-
 
 @endsection()
 

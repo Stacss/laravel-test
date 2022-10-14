@@ -76,7 +76,7 @@ class MainController extends Controller
     }
     public function update_brand($id, Request $request){
 
-        $valid = $request->validate([ //валидация, название должно быть больше 1
+        $valid = $request->validate([
             'brand'=>'required|min:1'
         ]);
 
@@ -123,7 +123,7 @@ class MainController extends Controller
 
         $brand = $brand->all();
 
-        return view('goods',['name' => $goods->all(), 'brand'=> $brand]); 
+        return view('goods',['name' => $goods->all(), 'brand'=> $brand]);
 
     }
 
@@ -211,11 +211,5 @@ class MainController extends Controller
         $Goods = $Goods->find($id)->delete();
 
         return redirect()->route('goods')->with('success', 'запись удалена');
-
-
-
     }
-
-
-
 }

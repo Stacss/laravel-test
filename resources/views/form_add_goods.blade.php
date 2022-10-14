@@ -2,16 +2,14 @@
 @extends('layout') <!-- подгружаю лайаут-->
 
 @section('title')
-    Добавление бренда
+    Добавление товара
 @endsection
-
 
 <!-- вставляю свой html   -->
 @section('main_content')
 
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
         <h1 class="display-4 fw-normal">Добавление товаров</h1>
-
     </div>
 
     @if($errors->any())
@@ -26,7 +24,9 @@
 @include('message')
 
         <form action="add_goods" method="post">
+
             @csrf
+
             <label for="brand_id">Бренд товара (обязательно для заполнения)</label>
             <select name="brand_id" id="brand_id" class="form-select">
                 <option selected value="">Выберите Бренд</option>
@@ -65,11 +65,13 @@
                 <th scope="row"><?=$i;?></th>
                 <td>{{$row->id}}</td>
                 <td>
+
                     @foreach($brand as $rowBrand)
                         @if ($rowBrand->id == $row->brand_id )
                             {{$rowBrand->brand}}
                         @endif
                     @endforeach
+
                 </td>
                 <td>{{$row->name}}</td>
                 <td><a href="{{route('update_goods', $row->id)}}" class="btn btn-success">Обновить</a> <a href="{{route('remove_goods', $row->id)}}" class="btn btn-danger">Удалить</a></td>
@@ -78,10 +80,6 @@
         @endforeach
 
         </tbody>
-
     </table>
-
-
-
 
 @endsection()

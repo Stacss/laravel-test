@@ -27,8 +27,6 @@
         <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
             <a class="me-3 py-2 text-dark text-decoration-none" href="/brands">Бренды</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="/goods">Товары</a>
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
-            <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
         </nav>
     </div>
 </header>
@@ -38,46 +36,19 @@
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
         <div class="col-12 col-md">
-
-            <small class="d-block mb-3 text-muted">© 2017–2022</small>
+            <small class="d-block mb-3 text-muted">©2022</small>
         </div>
         <div class="col-6 col-md">
-            <h5>Features</h5>
             <ul class="list-unstyled text-small">
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="/brands">Бренды</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="/goods">Товары</a></li>
             </ul>
         </div>
     </div>
 </footer>
-
 </div>
+
 <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-
-
 
 </body>
 </html>

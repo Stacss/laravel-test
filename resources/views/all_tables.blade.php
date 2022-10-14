@@ -1,11 +1,9 @@
 @extends('layout') <!-- подгружаю лайаут-->
 
 @section('title')
-    Авто
+    Товары
 @endsection
 
-
-<!-- вставляю свой html   -->
 @section('main_content')
 
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">

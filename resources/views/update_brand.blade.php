@@ -4,7 +4,6 @@
     Редактирование бренда
 @endsection
 
-
 <!-- вставляю свой html   -->
 @section('main_content')
 
@@ -13,11 +12,12 @@
     </div>
     @include('message')
 
-
     <div class="row">
         <div class="col-lg-6 col-xs-12">
             <form action="{{route('update_brand', $data->id)}}" method="post">
+
                 @csrf
+
                 <input type="text" name="brand" value="{{$data->brand}}" placeholder="Название бренда" class="form-control">
                 <button type="submit" class="btn btn-success" style="margin: 10px">Редактировать</button>
             </form>
@@ -36,13 +36,11 @@
         </tr>
         </thead>
         <tbody>
-
             <tr>
                 <th scope="row">1</th>
                 <td>{{$data->id}}</td>
                 <td>{{$data->brand}}</td>
             </tr>
-
         </tbody>
     </table>
 

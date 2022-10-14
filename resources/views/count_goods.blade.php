@@ -4,7 +4,6 @@
     Товары
 @endsection
 
-
 <!-- вставляю свой html   -->
 @section('main_content')
 
@@ -42,8 +41,5 @@
 
         </tbody>
     </table>
-
-
-
 
 @endsection()
